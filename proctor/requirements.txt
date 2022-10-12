@@ -1,0 +1,5 @@
+tensorflow
+scikit-learn
+opencv-python
+SpeechRecognition
+nltk

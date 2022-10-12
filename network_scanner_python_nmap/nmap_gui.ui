@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>809</width>
+    <height>694</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color:rgb(40, 40, 40);
+</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QTextEdit" name="textEdit">
+    <property name="geometry">
+     <rect>
+      <x>210</x>
+      <y>10</y>
+      <width>541</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="statusTip">
+     <string>Input Ip or Web address</string>
+    </property>
+    <property name="whatsThis">
+     <string>Input Address</string>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:rgb(74, 74, 74);
+</string>
+    </property>
+   </widget>
+   <widget class="QTextBrowser" name="info_box">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>290</y>
+      <width>781</width>
+      <height>371</height>
+     </rect>
+    </property>
+    <property name="statusTip">
+     <string>Information Bar</string>
+    </property>
+    <property name="whatsThis">
+     <string>It will show you all scan information.</string>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:rgb(70, 70, 70);</string>
+    </property>
+    <property name="html">
+     <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Noto Sans'; font-size:11pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;1)Enter Ip address or web address&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;2) Select a Scan Type&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;3) Press Start&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="start_scan">
+    <property name="geometry">
+     <rect>
+      <x>630</x>
+      <y>160</y>
+      <width>151</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>14</pointsize>
+     </font>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="mouseTracking">
+     <bool>false</bool>
+    </property>
+    <property name="acceptDrops">
+     <bool>false</bool>
+    </property>
+    <property name="toolTip">
+     <string>Start to Scan </string>
+    </property>
+    <property name="toolTipDuration">
+     <number>2</number>
+    </property>
+    <property name="statusTip">
+     <string>Start Button</string>
+    </property>
+    <property name="whatsThis">
+     <string>Press this to start a scan</string>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:rgb(134, 188, 255);
+border-radius:20px;
+hover: { color: rgb(42, 42, 42) };</string>
+    </property>
+    <property name="text">
+     <string>Start</string>
+    </property>
+    <property name="icon">
+     <iconset theme="start"/>
+    </property>
+    <property name="flat">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>191</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Web address or Ip address:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>360</x>
+      <y>260</y>
+      <width>61</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>All info</string>
+    </property>
+   </widget>
+   <widget class="QGroupBox" name="groupBox">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>50</y>
+      <width>741</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>Scan Type:</string>
+    </property>
+    <widget class="QRadioButton" name="ping">
+     <property name="geometry">
+      <rect>
+       <x>200</x>
+       <y>0</y>
+       <width>111</width>
+       <height>26</height>
+      </rect>
+     </property>
+     <property name="statusTip">
+      <string>Basic Ping Scan Only checks if host is Up</string>
+     </property>
+     <property name="text">
+      <string>Ping Scan</string>
+     </property>
+    </widget>
+    <widget class="QRadioButton" name="os_detection">
+     <property name="geometry">
+      <rect>
+       <x>420</x>
+       <y>0</y>
+       <width>121</width>
+       <height>26</height>
+      </rect>
+     </property>
+     <property name="statusTip">
+      <string>Os Detection Scan (Requires admin )</string>
+     </property>
+     <property name="text">
+      <string>OS Detection</string>
+     </property>
+    </widget>
+    <widget class="QRadioButton" name="regular">
+     <property name="geometry">
+      <rect>
+       <x>630</x>
+       <y>0</y>
+       <width>111</width>
+       <height>26</height>
+      </rect>
+     </property>
+     <property name="statusTip">
+      <string>Checks all open ports</string>
+     </property>
+     <property name="text">
+      <string>Regular</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QPushButton" name="pushButton">
+    <property name="geometry">
+     <rect>
+      <x>460</x>
+      <y>160</y>
+      <width>141</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="statusTip">
+     <string>Forcefully Exits process</string>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:rgb(255, 12, 12);
+border-radius:20px;
+hover: { color: rgb(42, 42, 42) };</string>
+    </property>
+    <property name="text">
+     <string>Force Exit</string>
+    </property>
+    <property name="icon">
+     <iconset theme="exit"/>
+    </property>
+   </widget>
+   <widget class="QWebView" name="webView">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>90</y>
+      <width>311</width>
+      <height>191</height>
+     </rect>
+    </property>
+    <property name="url">
+     <url>
+      <string>https://cloud7.news/wp-content/uploads/2022/04/Nmap-open-source-network-mapping-tool.jpg</string>
+     </url>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>QWebView</class>
+   <extends>QWidget</extends>
+   <header location="global">QtWebKitWidgets/QWebView</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

@@ -1,0 +1,9 @@
+gunicorn==20.0.4
+Flask==1.1.2
+Jinja2==2.11.3
+joblib==1.0.1
+numpy==1.19.5
+pandas==1.1.5
+scikit-learn==0.24.1
+sklearn==0.0
+xgboost==1.3.3
