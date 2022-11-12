@@ -1,0 +1,16 @@
+{% extends "main.html" %}
+{% block title %}Case home page{% endblock title %}
+{% block content %}
+    <div class='case-wrapper'>
+    {% for criminal in all_criminals %}
+    <div class='criminal-home-card' >
+        <img src='{{criminal.image.url}}' id="criminal_image">
+        <div class='criminal-home-card-container' >
+            <h3><b>{{criminal.pnum}}</b></h3>
+            <h4><b>{{criminal.name}}</b></h4>
+            <p>{{criminal.location}}</p>
+        </div>
+    </div>
+    {% endfor %}
+    </div>
+{% endblock content %}

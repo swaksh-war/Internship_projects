@@ -1,0 +1,17 @@
+{% extends "main.html" %}
+{% block content %}
+<form method='POST'>
+    {% csrf_token %}
+    <label for='analysis'>Get Crime Analysis based on City</label>
+    <input name='q' placeholder='Delhi' type='text'/>
+    <button type='submit'>Get</button>
+</form>
+    {% if pie_image %}
+    <img src='{{pie_image}}' alt='pie image'/><br/>
+    <br/>
+    <img src='{{hist_image}}' alt='hist_image'/>
+    <br/>
+    <p>The most Probable Crime That can happen in the city based on our Database is: <strong style="color:white">{{res}}</strong></p>
+    {% endif %}
+
+{% endblock content  %}

@@ -1,0 +1,8 @@
+{% extends "main.html" %}
+{% block content %}
+<div class='home-main-container'>
+    <a class="home-a-button" href="{% url 'crime_home' %}" > Go to Cases <a>
+    <a class="home-a-button" href="{% url 'criminal_home' %}"> Go to Criminals </a>
+</div>
+{% include 'search.html' %}
+{% endblock content %}

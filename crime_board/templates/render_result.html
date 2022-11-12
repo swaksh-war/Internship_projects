@@ -1,0 +1,31 @@
+{% include 'main.html' %}
+{% block content %}
+<div>
+    {% if cases_list %}
+        {% for case in cases_list %}
+            <div class='case-home-card'>
+                <img src='{{case.case_cover.url}}' >
+                <div class='case-home-card-container'>
+                    <h4><b>{{case.case_name}}</b></h4>
+                    <p>{{case.case_desc}}</p>
+                    <span>{{case.case_date}}</span>
+                </div>
+            </div>
+        {% endfor %}
+    {% elif criminal_list %}
+    <div class='case-wrapper'>
+        {% for criminal in criminal_list %}
+            <div class='criminal-home-card' >
+                <img src='{{criminal.image.url}}'>
+                <div class='criminal-home-card-container' >
+                    <h3><b>{{criminal.pnum}}</b></h3>
+                    <h4><b>{{criminal.name}}</b></h4>
+                    <p>{{criminal.location}}</p>
+                </div>
+            </div>
+        {% endfor %}
+        </div>
+    {% endif %}
+
+</div>
+{% endblock content %}

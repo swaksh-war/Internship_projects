@@ -6,3 +6,7 @@
 *.png
 *.PNG
 *.7z
+*.csv
+*.zip
+glaucoma-detector/
+*.m2

@@ -1,0 +1,21 @@
+{% extends "main.html" %}
+{% load widget_tweaks %}
+{% block title %}Add new Criminal{% endblock title %}
+{% block content %}
+<div class='criminal-form-container'>
+<form action='' method='POST' enctype='multipart/form-data'>
+    {% csrf_token %}
+    {{form.name.label_tag}}
+    {{form.name|add_class:'criminal-add-input'}}
+    {{form.location.label_tag}}
+    {{form.location|add_class:'criminal-add-input'}}
+    {{form.pnum.label_tag}}
+    {{form.pnum|add_class:'criminal-add-input'}}
+    {{form.image.label_tag}}
+    {{form.image|add_class:'criminal-add-input'}}
+    {{form.cases.label_tag}}
+    {{form.cases|add_class:'criminal-add-input-cases'}}
+    <button class='submit-button' type='submit'>Submit</button>
+</form>
+</div>
+{% endblock content %}

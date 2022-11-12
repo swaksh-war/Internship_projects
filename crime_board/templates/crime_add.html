@@ -1,0 +1,22 @@
+{% extends "main.html" %}
+{% block title %}Add Crime Case{% endblock title %}
+{% block content %}
+<div class='crime-form-container'>
+<form method='POST' action='' enctype='multipart/form-data'>
+    {% csrf_token %}
+    <label for='case_name'>Case Name:</label>
+    <input class='crime-add-input' type='text'name='case_name'/>
+    <label for='case_desc'>Case Description</label>
+    <input class='crime-add-input' type='text' name='case_desc'/>
+    <label for='case_date'>Date of incident</label>
+    <input class='crime-add-input' type='date' name='case_date'/>
+    <label for='case_loc'>Place of happening </label>
+    <input class='crime-add-input' type='text', name='case_loc'/>
+    <label for='case_cover'>Photo</label>
+    <input class='crime-add-input' type='file' name='cover_photo'/>
+    <label for='case_category'>Category</label>
+    <input class='crime-add-input' type='text' name='case_cat' />
+    <button class='submit-button' type='submit'>Submit</button>
+</form>
+</div>
+{% endblock content %}

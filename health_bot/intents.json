@@ -1,0 +1,140 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": [
+        "Hi",
+        "Hey",
+        "How are you?",
+        "Is anyone there?",
+        "Hello",
+        "Good day",
+        "welcome",
+        "Whats up",
+        "morning"
+      ],
+      "responses": [
+        "Hey :-),I am Villy nice to see you.",
+        "Hello, thanks for visiting",
+        "Hi there, what can I do for you?",
+        "Hi there, how can I help?"
+      ]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": ["Bye", "See you later", "Goodbye","sayonara"],
+      "responses": [
+        "See you later, thanks for visiting",
+        "Have a nice day",
+        "Bye! Come back again soon."
+      ]
+    },
+    {
+      "tag": "thanks",
+      "patterns": ["Thanks", "Thank you", "That's helpful", "Thank's a lot!","you are a good bot"],
+      "responses": ["Happy to help!", "Any time!", "My pleasure"]
+    },
+    {
+      "tag": "mental",
+      "patterns": [
+        "Sometimes I want to sucide",
+        "no one loves me",
+        "I feel alone",
+        "are you a doctor",
+        "I have many diseases",
+        "I am not feeling well",
+        "I think I am dying",
+        "I cant handle it more",
+        "Its been hard lately",
+        "I am depressed"
+      ],
+      "responses": [
+        "I can help you for your medication,You seem mentally tired.",
+        "I am just a bot.You shoul go and see a Psychiatrist.",
+        "Go see a doctor.You are mentally tired.",
+        "Hey.You should go and talk to your friends maybe that will make you feel better.",
+        "You are not alone in this world.Keep believing yourself and go see a doctor."
+      ]
+    },
+    {
+      "tag": "payments",
+      "patterns": [
+        "Do you take credit cards?",
+        "Do you accept Mastercard?",
+        "Can I pay with Paypal?",
+        "Are you cash only?",
+        "Do I need to pay you",
+        "I dont have any cash",
+        "I dont use upi",
+        "Maybe I can pay you in some other way"
+      ],
+      "responses": [
+        "We accept VISA, Mastercard and Paypal",
+        "We accept most major credit cards, and Paypal",
+        "Well,you have to pay me or I will put you again in depression",
+        "Gaurds! hold his hands we have to take his kidney"
+      ]
+    },
+    {
+      "tag": "skin",
+      "patterns": [
+        "My skin is burning",
+        "There are lot of rashes on my skin",
+        "I have acnes",
+        "My hands are burning",
+        "My hand got burned",
+        "I am having skin related issues",
+        "my skin is going red"
+      ],
+      "responses": [
+        "I think you are having a skin disease",
+        "You can try applying some cooling lotion.It may help",
+        "You should go see a dermatologist!",
+        "Looks like you are having a skin disease.I hope its not cancer!.Go see a doctor."
+      ]
+    },
+    {
+      "tag": "fracture",
+      "patterns": [
+        "My bones are hurting",
+        "My hand is swollen",
+        "I think I broke my hand",
+        "I think I broke my leg",
+        "I fell from a hig place",
+        "I got in accident",
+        "I crashed myself"
+      ],
+      "responses": [
+        "I think you broke your bones.Go see a orthologist",
+        "Try applying some Volini,Maybe it will help!",
+        "Dont move much and go to a doctor.",
+        "I hope you did not break your bones."
+      ]
+    },
+    {
+      "tag": "delivery",
+      "patterns": [
+        "How long does delivery take?",
+        "How long does shipping take?",
+        "When do I get my delivery?",
+        "When will I recieve my medicines"
+      ],
+      "responses": [
+        "Delivery takes 2-4 days",
+        "Shipping takes 2-4 days"
+      ]
+    },
+    {
+      "tag": "funny",
+      "patterns": [
+        "Tell me a joke!",
+        "Tell me something funny!",
+        "Do you know a joke?"
+      ],
+      "responses": [
+        "Why did the hipster burn his mouth? He drank the coffee before it was cool.",
+        "What did the buffalo say when his son left for college? Bison."
+      ]
+    }
+  ]
+}

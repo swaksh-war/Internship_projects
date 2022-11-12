@@ -1,0 +1,16 @@
+{% extends "main.html" %} {% block content %}
+<form method="POST">
+  {% csrf_token %}
+  <label for="analysis"
+    >Get Criminal Details of every category available in our database:
+  </label>
+  <input name="q" placeholder="Robbery" type="text" />
+  <button type="submit">Get</button>
+</form>
+{% if criminal_pie %}
+<img src="{{criminal_pie}}" alt="pie image" /><br />
+<br />
+<img src="{{criminal_bar}}" alt="hist_image" />
+<br />
+<p>The most Probable Crime That can happen in the city based on our Database is <strong style="color:white">{{res}}</strong></p>
+{% endif %} {% endblock content %}
