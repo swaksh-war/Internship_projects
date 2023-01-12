@@ -1,0 +1,59 @@
+.criminal-analysis-report {
+    height:100vh;
+    width:100vh;
+    margin: auto;
+}
+
+.criminal-pie-chart , .criminal-bar-chart, .case-pie-chart, .case-hist-chart {
+    height: 400px;
+    width: 600px;
+    margin: auto;
+}
+
+.criminal-pie-chart, .case-pie-chart {
+    position: relative;
+    left: 6%;
+    top: 2%;
+}
+
+.criminal-bar-chart, .case-hist-chart {
+    position: relative;
+    left: 6%;
+}
+
+.criminal-predict-verdict, .case-predict-verdict{
+    font-family: 'Archivo Narrow', sans-serif;
+    font-family: 'Fragment Mono', monospace;
+}
+
+.criminal-analysis-search {
+    position: relative;
+    top: 4px;
+    height: 40px;
+    width: 99vw;
+    background-color:grey;
+    text-align: center;
+}
+
+.criminal-search-input {
+    padding: 6px;
+    margin:auto;
+    border: none;
+    font-size: 17px;
+    border-radius: 3px;
+}
+
+.criminal-search-input-text {
+    margin-right:1%;
+    font-size: 27px;
+    font-family: 'Archivo Narrow', sans-serif;
+}
+
+.analysis-search-button {
+    background: #a4243b;
+    color: white;
+    padding: 1px 12px;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    cursor: pointer;
+}

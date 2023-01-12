@@ -10,3 +10,16 @@
 *.zip
 glaucoma-detector/
 *.m2
+*.pdf
+*.webp
+*.xlsx
+*.nii
+*.txt
+*.key
+*.pem
+*.bin
+*.mp4
+*.joblib
+*.h5
+*.arff
+*.ASUSROG

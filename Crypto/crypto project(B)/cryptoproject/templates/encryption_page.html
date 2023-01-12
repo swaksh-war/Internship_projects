@@ -1,0 +1,27 @@
+{% extends "main.html" %}
+{% block title %}Encrypt your File{% endblock title %}
+{% block content %}
+<div class="container">
+    <form class="form-group" method='POST' enctype='multipart/form-data'>
+        {% csrf_token %}
+        <div class="input-group mb-3">
+            <label class="input-group-text" for=filename>Enter Your Filename with extension</label>
+            <input class="form-control" type='text' name='filename'/>
+        </div>
+        <div class="input-group mb-3">
+            <label class="input-group-text" for='file'>Upload your file here: </label>
+            <input class="form-control" type='file' name='file'/>
+        </div>
+        <br/>
+        <button class="btn btn-primary form-control" type='submit'>Upload</button>
+    </form>
+</div>
+{% if key1 %}
+    <div class="container">
+        <h4>These keys are very important 2nd key will be required for 1st layer decryption and 1st key will be required for the 2nd layer decryption</h4>
+        <a class="btn btn-secondary" href='/media/key/filekey.key' download>Download key 1</a>
+        <a class="btn btn-secondary" href='/media/key/{{filename}}_RSA_private.pem' download>Download key 2</a>
+    <br/>
+    </div>
+{% endif %}
+{% endblock content %}

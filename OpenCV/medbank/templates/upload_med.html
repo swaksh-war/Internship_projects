@@ -1,0 +1,39 @@
+{% extends "main.html" %}
+{% block title %}Upload medicine{% endblock title %}
+{% block content %}
+<form method='POST' enctype='multipart/form-data'>
+    {% csrf_token %}
+    <div class="form-group">
+        <label for='med_name'>Medicine Name: </label>
+        <input name='med_name' type='text' class="form-control" aria-describedby="namehelp"/>
+        <small id="namehelp" class="form-text text-muted">Enter the name of the medicine</small>
+    </div>
+    <div class="form-group">
+        <label for='med_quantity'>Enter Quantity of medicine:</label>
+        <input name='med_quantity' type='number' class='form-control'/>
+    </div>
+    <div class="form-group">
+        <label for='med_expiry_date'>Enter Medicine Expiry date:</label>
+        <input name='med_expiry_date' type='date' class='form-control'/>
+    </div>
+    <div class="form-group">
+        <label for='med_category'>Select medicine category:</label>
+        <select name='category' class='form-control'>
+            <option>fever</option>
+            <option>cold</option>
+            <option>cough</option>
+            <option>vomitting</option>
+            <option>Stomachache</option>
+            <option>Headache</option>
+            <option>dizziness</option>
+            <option>bodypain</option>
+        </select>
+    </div>
+    <div class="custom-file">
+        <input name='med_image' type="file" class="custom-file-input" id="customFile">
+        <label class="custom-file-label" for="customFile">Choose file</label>
+      </div>
+
+    <button class='btm btn-primary' type='submit'>Submit</button>
+</form>
+{% endblock content %}

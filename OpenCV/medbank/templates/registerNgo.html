@@ -1,0 +1,39 @@
+{% extends "main.html" %}
+{% block title %}Donor Registration{% endblock title %}
+{% block content %}
+<form method='post'>
+    {% csrf_token %}
+    <div class="form-group">
+        <label for="username">Username</label>
+        <input name="username" type="text" class="form-control"/>
+    </div>
+    <div class="form-group">
+        <label for="password">Password</label>
+        <input name="password" type="password" class="form-coontrol"/>
+    </div>
+    <div class="form-group">
+        <label for="password2">Confirm Password</label>
+        <input name="password2" type="password" class="form-control"/>
+    </div>
+    <div class="form-group">
+        <label for="NgoName">Enter Your NGO name</label>
+        <input name="name" type="text" class="form-control"/>
+    </div>
+    <div class="form-group">
+        <label for="gov_reg">is your NGO recognised by Govt. of India</label>
+        <select class='form-control' name='gov_reg'>
+            <option value='Yes' selected>Yes</option>
+            <option value='No'>No</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <label for="contact">Contact</label>
+        <input name="contact" type="number" class="form-control"/>
+    </div>
+    <div class="form-group">
+        <label for="email">Enter your Email</label>
+        <input name="email" type="email" class="form-control"/>
+    </div>
+    <button type='submit' class='btn btn-primary'>Submit</button>
+</form>
+{% endblock content %}

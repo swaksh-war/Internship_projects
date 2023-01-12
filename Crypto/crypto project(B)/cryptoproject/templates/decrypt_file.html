@@ -1,0 +1,22 @@
+{% extends "main.html" %}
+{% block title %}Decrypt your file{% endblock title %}
+{% block content %}
+    <div class="container">
+        <form method='POST' enctype='multipart/form-data' class="form-group">
+            {% csrf_token %}
+            <div class="input-group mb-3">
+                <label class="input-group-text" for='decryptlayer1'>Enter key for 1st layer Decryption(2nd key you were provided)</label>
+                <input class="form-control" type='FILE' placeholder='enter key here.' name='keyl1'/><br/>
+            </div>
+            <div class="input-group mb-3">
+                <label class="input-group-text" for='decryptlayer2'>Enter key for 2nd layer Decryption (1st key you were provided)</label><br/>
+                <input class="form-control" type='FILE' placeholder='enter key here' name='keyl2'/><br/>
+            </div>
+            <button class="btn btn-primary form-control" type='submit'>Upload</button>
+        </form>
+    </div>
+    {% if file_path %}
+    <a class='btn btn-secondary form-control' href="{{file_path}}">Download decrypted file here</a>
+    {% endif %}
+
+{% endblock content %}

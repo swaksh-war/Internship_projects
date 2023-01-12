@@ -1,0 +1,11 @@
+{% extends "main.html" %}
+{% block content %}
+<div class='container'>
+    {% for med in all_meds  %}
+        <div class='sub-container'>
+            <h3>{{med.name}}</h3><br/>
+            <span>available in inventory: {{med.quantity}}</span>
+        </div>
+    {% endfor %}
+</div>
+{% endblock content %}

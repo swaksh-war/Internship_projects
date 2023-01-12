@@ -1,0 +1,16 @@
+{% extends "main.html" %}
+{% block title %}Home{% endblock title %}
+{% block content %}
+{% if request.user.is_authenticated %}
+    <div>
+        <a href="{% url 'encrypt' %}" class='btn btn-warning'> Encrypt </a>
+        <a href=" {% url 'fileList' %} " class='btn btn-secondary'> File List </a>
+        <a href="{% url 'logout' %}" class="btn btn-danger">Logout</a>
+    </div>
+{% else %}
+    <div>
+        <a href="{% url 'login' %}" class='btn btn-success'> Login </a>
+        <a href="{% url 'register' %}" class='btn btn-dark'> Register </a>
+    </div>
+{% endif %}
+{% endblock content %}

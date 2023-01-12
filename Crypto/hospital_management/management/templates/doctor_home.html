@@ -1,0 +1,10 @@
+{% extends 'main.html' %}
+{% block content %}
+<h1>Welcome to home page {{name}}</h1>
+<a href="{% url 'file_upload' %}"> Upload Prescription </a>
+<a href="{% url 'view_pharmacy' %}">Pharmacy</a>
+<a href="{% url 'appointments' %}">View Appointment</a>
+<a href="{% url 'show_feedback' %}">view feedback</a>
+<a href="{% url 'appointment_add' %}">Add Appoinment</a>
+<a href="{% url 'add_pharmacy' %}">Add medicine in the inventory</a>
+{% endblock content %}

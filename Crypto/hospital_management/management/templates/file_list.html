@@ -1,0 +1,8 @@
+{% extends 'main.html' %}
+{% block content %}
+{% if files %}
+    {% for file in files %}
+    <a class="btn btn-primary form-control"href="{% url 'download_file' file.filename %}"> {{file.filename}} </a><br/>
+    {% endfor %}
+{% endif%}
+{% endblock content %}

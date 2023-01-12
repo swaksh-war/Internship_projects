@@ -1,0 +1,15 @@
+{% extends 'main.html' %}
+{% block title %}Verify{% endblock title %}
+{% block content %}
+<p>We have sent a verification code to your email please check that</p>
+<form method='POST'>
+    {% csrf_token %}
+    <label>Enter the verification code in your email</label>
+    <input type='text' name='key' />
+    <button type='submit'>Submit</button>
+</form>
+{% if flag == 1 %}
+    <a href="{% url 'download' filename %}">Download the file</a>
+    <a href="{% url 'delete' filename %}">Delete the file</a>
+{% endif %}
+{% endblock content %}

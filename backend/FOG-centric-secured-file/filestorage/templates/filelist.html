@@ -1,0 +1,11 @@
+{% extends 'main.html' %}
+{% block title %}File List{% endblock title %}
+{% block content %}
+{% if all_files %}
+{% for file in all_files %}
+<div>
+    <a href="{% url 'verify' file.filename %}">{{file.filename}}</a>
+</div>
+{% endfor %}
+{% endif %}
+{% endblock content %}

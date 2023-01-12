@@ -1,0 +1,31 @@
+{% extends 'main.html'%}
+{% block title %} Home Page {% endblock title %}
+{% block content %}
+<div class="container">
+    <div class="row">
+        <div class="col-12">
+            <div class="container">
+                <h4 >Why encrypting files?</h4>
+                <p>We need to encrypt our files so that we can store our files in cloud in safe way from the hacker. So if at any point of time if the database is hacked the files we stored are still safe from the hackers</p>
+                <br/><br/>
+                <h4>Why using hybrid process?</h4>
+                <p>We use some hybrid algorithm to encrypt the file through multiple layers and make sure of proper safety of your files</p>
+                <br/><br/>
+                
+                <h4> What is the Difference between 2 layer and 3 layer algorithm difference? </h4>
+                <p> what we are trying to do is passing a file through different cipher and encrypting the file in multiple layers, now why we are using different keys, just to make them more secure, because due to 1 data breach if our database is compromised and somehow key is compromised we will loose all our data.</p>
+                <br/><br/>
+                <h4>Performance analysis</h4>
+                <p> while using 2 layers the file getting decrypted when its get compromised is almost 20% but while using 3 layers the possibility comes down to only almost 9% <span> Ref: Internet and IEEE research paper</span></p>
+
+                <h4>Size Compression analysis</h4>
+                <p> it is observed that in each layer the size of the file gets 5-10% lesser by getting compressed. 
+                    For example: initially file size is 100kb then it after 1st layer it will be 90kb at max and after 2nd layer it will be 81kb at max. and after 3rd layer will be 73kb at max.
+                </p>
+
+
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock content %}

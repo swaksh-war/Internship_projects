@@ -1,0 +1,14 @@
+{% extends "main.html" %}
+{% block title %}User Login{% endblock title %}
+{% block content %}
+<div class="container" >
+    <form method='POST' class='form-group'>
+        {% csrf_token %}
+        <label for='username'>Username:</label>
+        <input name='username' class="form-control" type='text' placeholder='Enter username here'/>
+        <label for='password'>Password</label>
+        <input name='password' type='password' class='form-control' placeholder='Enter password here'/>
+        <button type='submit' class="btn btn-primary form-control">Submit</button>
+    </form>
+<div>
+{% endblock content %}

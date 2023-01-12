@@ -1,0 +1,12 @@
+{% extends "main.html" %}
+{% block content %}
+<div>
+    {% for appointment in all_appointments %}
+    <div>
+        <p>Name of the appointment: {{appointment.name}}</p>
+        <p>Time of the appointment: {{appointment.time}}</p>
+        <p>Name of the patient: {{appointment.patient.name}}</p>
+    </div>
+    {% endfor %}
+</div>
+{% endblock content %}

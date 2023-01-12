@@ -1,0 +1,9 @@
+{% extends "main.html" %}
+{% block style %}
+<link rel="stylesheet" href="/media/css/patient_home.css">
+{% endblock style %}
+{% block content %}
+<h1> welcome {{name}}</h1>
+<a href="{% url 'file_name' %}">Check Your reports</a>
+<a href="{% url 'add_feedback' %}">Add feedback for your doctor</a>
+{% endblock content %}

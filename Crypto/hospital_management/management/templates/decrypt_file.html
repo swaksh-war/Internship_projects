@@ -1,0 +1,9 @@
+{% extends 'main.html' %}
+{% block style %}
+<link rel="stylesheet" href="media/css/decrypt_file.css">
+{% endblock style %}
+{% block content %}
+{% if file_path %}
+<a href="{{file_path}}">Download decrypted file here</a>
+{% endif %}
+{% endblock content %}

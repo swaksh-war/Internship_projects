@@ -1,17 +1,17 @@
-* {
-    font: sans-serif;
-}
+/* * {
+    font: Verdana, sans-serif;
+} */
 body {
-    background-color: #888;
+    background: white;
 }
 
-img {
+.case-cover, .criminal-cover {
     width: 600px;
     height: 400px;
 }
 
 .home-main-container{
-    background-color: rgb(12,24,36);
+    background-color: white;
     color: aqua;
     position: fixed;
     top: 30%;

@@ -1,0 +1,43 @@
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="{% url 'home' %}">f-cryptor</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        {% if request.user.is_authenticated %}
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'encrypt' %}">Encrypt file</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="{% url 'encryptl3' %}">Enccrypt3.0</a>
+          </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'fileList' %}">File List</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="{% url 'list3' %}">FileList3</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'showpublickey' %}">Get your public key</a>
+        </li>
+        <li class="nav-link">
+            <a class="nav-link" href="{% url 'userLogout' %}">Logout</a>
+        </li>
+
+        {% else %}
+        <li class="nav-item">
+            <a class="nav-link" href="{% url 'login' %}">Login</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="{% url 'register' %}">Register</a>
+        </li>
+        {% endif %}
+
+        {% if request.user.is_authenticated %}
+        <li class="nav-item"><span class="nav-link mx-xxl-5">{{request.user}}</span></li>
+        {% endif %}
+      </ul>
+    </div>
+  </nav>

@@ -1,0 +1,16 @@
+{% extends "main.html" %}
+{% block style %}
+<link rel="stylesheet" href="/media/css/add_appointment.css">
+{% endblock style %}
+{% block content %}
+<form method='POST'>
+    {% csrf_token %}
+    <label class='label1' >Name of the appointment: </label>
+    <input  type='text' name='name'/>
+    <label>Enter the time of appontment: </label>
+    <input type='time' name='time'/>
+    <label>Enter the name of the patient: </label>
+    <input type='text' name='patient_name'/>
+    <button type='submit'>Submit</button>
+</form>
+{% endblock content %}

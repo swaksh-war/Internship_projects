@@ -1,0 +1,11 @@
+{% extends 'main.html' %}
+{% block title %}Show publickey{% endblock title %}
+{% block content %}
+{% if public_key %}
+<div class="container">
+    <p class="text-primary">Your Public key is {{public_key}}</p>
+{% else %}
+    <p class="text-primary">There was error finding your public key</p>
+{% endif %}
+</div>
+{% endblock content %}

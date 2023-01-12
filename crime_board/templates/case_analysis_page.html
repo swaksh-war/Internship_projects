@@ -2,16 +2,19 @@
 {% block content %}
 <form method='POST'>
     {% csrf_token %}
-    <label for='analysis'>Get Crime Analysis based on City</label>
-    <input name='q' placeholder='Delhi' type='text'/>
-    <button type='submit'>Get</button>
+    <div class="criminal-analysis-search">
+        <label class="criminal-search-input-text" for='analysis'>Get Crime Analysis based on City</label>
+        <input class="criminal-search-input" name='q' placeholder='Delhi' type='text'/>
+        <button class="analysis-search-button" type='submit'>Get</button>
+    </div>
 </form>
     {% if pie_image %}
-    <img src='{{pie_image}}' alt='pie image'/><br/>
-    <br/>
-    <img src='{{hist_image}}' alt='hist_image'/>
-    <br/>
-    <p>The most Probable Crime That can happen in the city based on our Database is: <strong style="color:white">{{res}}</strong></p>
+    <div class="criminal-analysis-report">
+        <img class="case-pie-chart" src='{{pie_image}}' alt='pie image'/><br/>
+        <br/>
+        <p class="case-predict-verdict">The most Probable Crime That can happen in the city based on our Database is: <strong style="color:red">{{res}}</strong></p><br/>
+        <img class="case-hist-chart" src='{{hist_image}}' alt='hist_image'/>
+    </div>
     {% endif %}
 
 {% endblock content  %}

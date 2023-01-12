@@ -1,0 +1,38 @@
+{% extends "main.html" %}
+{% block title %}View all meds here{% endblock title %}
+{% block content %}
+{% for med in all_meds %}
+<div class="card mb-4 mr-2 ml-2">
+    <div class="card-horizontal pt-1 mb-1 ml-1">
+    <!--Card image-->
+    <div class="view overlay">
+                             
+                <img class="card-img-top" src="{{med.image.url}}" alt="Card image cap">
+                <a href="#" target="_blank">
+                <div class="mask rgba-white-slight"></div>
+              </a>
+
+     </div>
+
+    <!--Card content-->
+    <div class="card-body">
+
+      <!--Title-->
+      <h6 class="card-title"><a class="text-danger" style="font-weight:bold">{{med.name}}</a></h6>
+      <!--Text-->
+      <p class="card-text">{{med.category}}</p>
+     
+            <a href="#" class="stretched-link" target="_blank"></a>
+        
+       <div class="card-footer">
+        <span class="float-left ml-n4">
+           {{med.quantity}}
+        </span>
+       </div>
+    </div>
+
+    </div>
+</div>
+  {% endfor %}
+
+{% endblock content %}

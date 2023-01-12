@@ -4,7 +4,7 @@
     <div class='case-wrapper'>
     {% for criminal in all_criminals %}
     <div class='criminal-home-card' >
-        <img src='{{criminal.image.url}}' id="criminal_image">
+        <img class="criminal-cover" src='{{criminal.image.url}}' id="criminal_image">
         <div class='criminal-home-card-container' >
             <h3><b>{{criminal.pnum}}</b></h3>
             <h4><b>{{criminal.name}}</b></h4>

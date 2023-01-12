@@ -1,0 +1,9 @@
+{% extends 'main.html' %}
+{% block title %}User Registar{% endblock title %}
+{% block content %}
+    <form method='POST'>
+        {% csrf_token %}
+        {{form.as_table}}
+        <button type='submit'>Submit</button>
+    </form>
+{% endblock content %}

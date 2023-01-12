@@ -1,0 +1,121 @@
+.Description {
+    margin-top: -30rem;
+    margin-left: 10rem;
+  }
+  
+  .header-1 {
+    color: rgb(50, 59, 226);
+    margin-bottom: 20px;
+    font-size: 24px;
+  }
+  
+  .header-2 {
+      font-size: 3rem;
+      font-weight: bold;
+      text-transform: uppercase;
+      margin-bottom: 15px;
+      color: #ffffff
+  }
+  
+  .button-1{
+      margin-top: 5rem;
+      margin-left: 10rem;
+      font-size: 18px;
+      border-radius: 10px;
+      cursor: pointer;
+  }
+  
+  .button-2 {
+      margin-top: 20px;
+      margin-left: 10rem;
+      margin-bottom:18rem;
+      font-size: 18px;
+      border-radius: 10px;
+      cursor: pointer;
+  }
+  
+  .for_your_care {
+      display: flex;
+  }
+  
+  .form{
+      width: 300px;
+      background: linear-gradient(to top, rgba(0,0,0,0.8)50%,rgba(0,0,0,0.8)50%);
+      margin-right: 50px;
+      float: right;
+      transform: translate(0%,-5%);
+      border-radius: 5px;
+      padding: 25px;
+  }
+  
+  .form h2{
+      width: 220px;
+      font-family: sans-serif;
+      text-align: center;
+      color: #ea0808;
+      font-size: 22px;
+      background-color: #fff;
+      border-radius: 10px;
+      margin: 2px;
+      padding: 8px;
+  }
+  
+  .form input{
+      width: 240px;
+      height: 35px;
+      background: transparent;
+      border-bottom: 1px solid #ea0808;
+      border-top: none;
+      border-right: none;
+      border-left: none;
+      color: #fff;
+      font-size: 15px;
+      letter-spacing: 1px;
+      margin-top: 30px;
+      font-family: sans-serif;
+  }
+  
+  .form input:focus{
+      outline: none;
+  }
+  
+  ::placeholder{
+      color: #fff;
+      font-family: Arial;
+  }
+  
+  .btnn{
+      width: 240px;
+      height: 50px;
+      background: #ea0808;
+      border: none;
+      margin-top: 30px;
+      font-size: 18px;
+      border-radius: 10px;
+      cursor: pointer;
+      color: #fff;
+      transition: 0.4s ease;
+  }
+  .btnn:hover{
+      background: #fff;
+      color: #ea0808;
+  }
+  .btnn a{
+      text-decoration: none;
+      color: #000;
+      font-weight: bold;
+  }
+  .form .link{
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 17px;
+      padding-top: 20px;
+      text-align: center;
+  }
+  .form .link a{
+      text-decoration: none;
+      color: #ea0808;
+  }
+  .sub-menu-1{
+      display:none;
+  
+  }

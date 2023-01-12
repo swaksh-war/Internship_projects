@@ -1,0 +1,21 @@
+{% extends 'main.html' %}
+{% block content %}
+<form method='POST' enctype='multipart/form-data'>
+    {% csrf_token %}
+    <div>
+        <label for=filename>Enter Your Filename with extension</label>
+        <input type='text' name='filename'/>
+    </div>
+    <div>
+        <label for='file'>Upload your file here: </label>
+        <input type='file' name='file'/>
+    </div>
+    <div>
+        <label>Enter the Patient name: </label>
+        <input type='text' name='patient_name'/>
+    </div>
+    <br/>
+    <div></div>
+    <button type='submit'>Upload</button>
+</form>
+{% endblock content %}

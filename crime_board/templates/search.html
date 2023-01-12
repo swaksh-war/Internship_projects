@@ -1,4 +1,5 @@
-<form action="{% url 'search_result' %}" method='GET'>
-    
-<i class="fa fa-search" aria-hidden="true"></i><input name='q' type='text' placeholder="Search.." >
-</form>
+<div class='search-bar' >
+    <form action="{% url 'search_result' %}" method='GET'>
+        <i class="fa fa-search searchIcon" aria-hidden="true"></i><input class='search-bar-input' name='q' type='text' placeholder="Search.." >
+    </form>
+</div>

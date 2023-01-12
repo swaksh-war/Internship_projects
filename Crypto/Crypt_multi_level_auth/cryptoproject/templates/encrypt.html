@@ -1,0 +1,24 @@
+{% extends "main.html" %}
+{% block content %}
+<form method='POST' enctype='multipart/form-data'>
+    {% csrf_token %}
+    <div class='input-group mb-3'>
+    <label class="input-group-text">Enter your file name:</label>
+    <input class="form-control" type='text' name='filename'/>
+    </div>
+    <div class="input-group mb-3">
+    <label class="input-group mb-3" >Upload the file:</label>
+    <input class="form-control" type='file' name='file'/>
+    </div>
+    <button class="btn btn-primary form-control" type='submit'>Submit</button>
+
+</form>
+
+{% if enc %}
+    <div class="container">
+        <h4>You will get the key for decryption here</h4>
+        <a class="btn btn-secondary" href='/media/keys/fernetpass.key' download>Download fernet key</a>
+    <br/>
+    </div>
+{% endif %}
+{% endblock content %}

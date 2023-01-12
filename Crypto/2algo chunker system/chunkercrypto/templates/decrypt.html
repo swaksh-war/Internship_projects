@@ -1,0 +1,19 @@
+{% extends "main.html" %}
+{% block content %}
+<br/><br/><br/>
+    <form method='POST' enctype='multipart/form-data' >
+        {% csrf_token %}
+        <div class="input-group mb-3">
+        <label class="input-group-text">Enter AES key</label>
+        <input class="form-control" type='file' name='aes_key' />
+        </div>
+        <div class="input-group mb-3">
+        <label class="input-group-text">Enter FERNET key</label>
+        <input class="form-control" type='file' name='fer_key' />
+        </div>
+        <button class="btn btn-primary form-control" type='submit'>Submit</button>
+    </form>
+    {% if file_path %}
+    <a class='btn btn-secondary form-control' href="{{file_path}}">Download decrypted file here</a>
+    {% endif %}
+{% endblock content %}
